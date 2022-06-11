@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="top">
+        <span class="board">Board of Intermediate Education, Karachi</span></div><br/>
+        <span class="exam">H.S.C Examination</span><br/>
+        <span class="marking">Statement of Marks</span><br/>
+        <span class="cantype">(For Successful Candidates only)</span><br/>
+    </div>
+    <div class="main">
+        <span class="one">Candidate Name :</span> <img src="./photo-document-passport-id-mature-260nw-1178817271.webp" class="idimg">
+        <span class="cname" id="name"></span>
+
+        <span class="two">Candidate's Father Name :</span> 
+        <span class="cfname" id="fname"></span>
+
+        <span class="three">Date of Birth :</span> 
+        <span class="cdob" id="dob"></span>
+
+         <span class="four">Candidate's ID :</span>
+        <span class="csno" id="sno"></span> 
+
+        <span class="five">Name of Examination Centre :</span> 
+        <span class="cexamcen" id="examcen"></span>
+
+        <span class="six">Name of School/Institute :</span> 
+        <span class="cschool" id="school"></span>
+
+        <span class="seven">Subject Group :</span> 
+        <span class="cgroup" id="group"></span>
+
+    </div>
+
+        <table class="markBox">
+
+           <tr>
+            <td rowspan="2">S.NO</td>
+            <td colspan="6" rowspan="2">SUBJECTS</td>
+            <td colspan="2">Max.Marks</td>
+            <td colspan="2">Min.Marks</td>     
+            <td colspan="4">OBTAINED MARKS</td>
+            <td colspan="3" rowspan="2">REMARKS</td>
+        </tr>
+        <tr>  
+            <td>TH</td>
+            <td>PR</td>
+            <td>TH</td>
+            <td>PR</td>
+            <td>TH</td>
+            <td>PR</td>
+            <td colspan="2">TOTAL</td>
+        </tr> 
+        <tr>
+            <td>01</td>
+            <td colspan="6">URDU NORMAL </td>
+            <td>75</td>
+            <td>__</td>
+            <td>25</td>
+            <td>__</td>
+            <td id="urdumarks"></td>
+            <td>__</td>
+            <td colspan="2" id="urdutotal"></td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td colspan="6">ENGLISH </td>
+            <td>75</td>
+            <td>__</td>
+            <td>25</td>
+            <td>__</td>
+            <td id="engmarks"></td>
+            <td>__</td>
+            <td colspan="2" id="engtotal"></td>
+            
+        </tr>
+        <tr>
+            <td>03</td>
+            <td colspan="6">CHEMISTRY</td>
+            <td>85</td>
+            <td>15</td>
+            <td>28</td>
+            <td>05</td>
+            <td id="chemmarks"></td>
+            <td id="chempracmarks"></td>
+            <td colspan="2" id="chemtotal"></td>
+            
+        </tr>
+         <tr>
+            <td>04</td>
+            <td colspan="6">ISLAMIAT</td>
+            <td>75</td>
+            <td>__</td>
+            <td>25</td>
+            <td>__</td>
+            <td id="islmarks"></td>
+            <td>__</td>
+            <td colspan="2" id="isltotal"></td>
+            
+        </tr>
+        <tr>
+            <td>05</td>
+            <td colspan="6">MATHEMATICS</td>
+            <td>100</td>
+            <td>__</td>
+            <td>33</td>
+            <td>__</td>
+            <td id="mathmarks"></td>
+            <td>__</td>
+            <td colspan="2" id="mathtotal"></td>
+            
+        </tr>
+        <tr>
+            <td>06</td>
+            <td colspan="6">PHYSICS</td>
+            <td>85</td>
+            <td>15</td>
+            <td>28</td>
+            <td>05</td>
+            <td id="phymarks"></td>
+            <td id="phypracmarks"></td>
+            <td colspan="2" id="phytotal"></td>
+            
+        </tr>
+        </table>
+
+        <div class="grade">
+            <div class="grade1">GRAND TOTAL</div>
+            <div class="grade2" id="TotalMarks"></div>
+            <div class="grade3">GRADE</div>
+            <div class="grade4" id="gradeyouget"></div>
+        </div>
+       
+    </div>
+    <div class="footer">
+           <div>
+              <ul>  
+                   <li id="dateofissue"></li>
+                   <li><b>Date & Time of Issue</b></li>
+              </ul>
+           </div>
+           <div>
+            <hr>
+              Assistant Director System
+           </div>
+           <div>
+            <hr>
+              Controller of Examination
+           </div>
+    </div>
+    <button id="button" onclick="window.print()">Print your MarksSheet</button>
+
+    <script src="./app.js"></script>
+</body>
+</html>
